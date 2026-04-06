@@ -20,7 +20,7 @@
 
 ---
 
-## ⚡ what is this
+##  what is this
 
 **KinetiCore** is an experimental computer vision sandbox that collapses the distance between physical intent and digital execution. No controllers. No peripherals. No latency theater.
 
@@ -37,7 +37,7 @@ Each script is a standalone experiment. Run them independently, break them, comb
 | File | What it does |
 |---|---|
 | `gestures.py` | Core gesture engine — detects pointing, rock, OK, call-me, open palm in real-time. Overlays labeled bounding boxes on both hands and face simultaneously. |
-| `devil.py` | Triggers eye-crop captures with a 🤘 gesture. Freezes and overlays the eye images back onto the live feed. OK clears the stack. Face mesh renders as a green constellation across your skin. |
+| `devil.py` | Triggers eye-crop captures with a  gesture. Freezes and overlays the eye images back onto the live feed. OK clears the stack. Face mesh renders as a green constellation across your skin. |
 | `interactive_molecule.py` | Finger-driven 3D molecule manipulation. Move it, rotate it, own it. |
 | `index_cubes.py` | Your index finger becomes a spatial cursor controlling floating cubes in the frame. |
 | `half_face.py` | Splits and mirrors facial geometry in real-time. Symmetry is a lie — this proves it. |
@@ -68,18 +68,18 @@ python interactive_molecule.py
 
 ---
 
-## 🖐 gesture reference
+##  gesture reference
 
 | Gesture | Trigger | Action |
 |---|---|---|
-| ☝️ Pointing | Index up, all others down | `execute` label |
-| 🤙 Call Me | Thumb + pinky up | `call me` label |
-| 👌 OK | Thumb + index pinched (dist < 0.05) | `ok` / clear state |
-| 🤘 Rock | Index + pinky up, middle + ring down | `yeah` / capture eye |
+|  Pointing | Index up, all others down | `execute` label |
+|  Call Me | Thumb + pinky up | `call me` label |
+|  OK | Thumb + index pinched (dist < 0.05) | `ok` / clear state |
+|  Rock | Index + pinky up, middle + ring down | `yeah` / capture eye |
 
 ---
 
-## 🧠 architecture
+##  architecture
 
 ```
 webcam feed
@@ -97,17 +97,6 @@ OpenCV frame capture (flipped, BGR→RGB)
 
 Latency is kept near-zero by processing each frame inline with no async overhead. What you see is what's happening.
 
----
-
-## 🔭 what's next
-
-- [ ] Gesture-to-keystroke mapping (control your OS with your hands)
-- [ ] Persistent gesture sequences (macros via motion)
-- [ ] Depth estimation via landmark z-axis
-- [ ] Multi-hand interaction events
-- [ ] WebSocket output stream for external integrations
-
----
 
 ## ⚠️ disclaimer
 
