@@ -51,18 +51,17 @@ Tracks face and hand landmarks. Using a "rock" gesture captures and overlays eye
 ---
 
 ### `index_cubes.py` — Finger Painter
-Opens two windows side by side: *"me?"* (your raw camera feed) and *"you?"* (a black canvas). Point ☝️ your index finger and colored cubes spawn at your fingertip, painting the canvas as you move. Flash 🤘 rock to clear everything and start over. The canvas persists between frames — it only resets when you tell it to.
+A real-time webcam tool tracking face and hand landmarks. It renders facial meshes in green and hand skeletons in red on a separate black canvas. Pointing your index finger lets you draw random colorful blocks, while a "rock" gesture clears the canvas. The live feed and the drawing canvas are shown in separate windows.
 
 ---
 
 ### `half_face.py` — Split Mesh
-Renders the full face mesh tesselation but **only on the left half of your face**, using your nose as the dividing line. The right side stays clean. Your hands are tracked too, drawn as a black skeleton overlay. A simple but striking visual — half human, half wireframe.
+A real-time webcam tool for hand and face tracking. It applies custom visual styles to the detected landmarks. Hand points and connections are drawn completely in black. For the face, it dynamically uses the nose tip to bisect the mesh, rendering the facial tesselation and landmarks exclusively on the left half of the user's face.
 
 ---
 
 ### `interactive_molecule.py` — Hand-Driven Molecule
-A 3D molecule visualization you control with your hands. Move your hand around and the molecule follows, rotates, and responds to your position in space.
-
+An interactive 3D molecule viewer using webcam hand tracking. Rotate the methane molecule with an open hand, or pinch to grab and stretch atoms.
 ---
 
 ### `mirror_screen.py` — Mirror Mode
@@ -75,8 +74,7 @@ A desktop image dithering tool featuring Floyd-Steinberg, JJN, and Atkinson algo
 ---
 
 ### `simple_monkey.py` — Starter Demo
-The entry point. A minimal gesture loop — good for testing that your camera and MediaPipe are working before running the heavier scripts.
-
+A webcam tracker for faces and hands. It toggles between two displayed images based on whether the index finger enters the face bounding box.
 ---
 
 ## Stack
