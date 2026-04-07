@@ -66,6 +66,7 @@ A real-time webcam tool for hand and face tracking. It applies custom visual sty
 ### `interactive_molecule.py` — Hand-Driven Molecule
 
 An interactive 3D molecule viewer using webcam hand tracking. Rotate the methane molecule with an open hand, or pinch to grab and stretch atoms.
+
 ---
 
 ### `mirror_screen.py` — Mirror Mode
@@ -77,11 +78,13 @@ Reflects and warps the webcam feed using facial landmark anchors. The effect dis
 ### `dithering_filter.py` — Dither Cam
 
 A desktop image dithering tool featuring Floyd-Steinberg, JJN, and Atkinson algorithms. It offers a dark GUI, live previews, and threshold control.
+
 ---
 
 ### `simple_monkey.py` — Starter Demo
 
 A webcam tracker for faces and hands. It toggles between two displayed images based on whether the index finger enters the face bounding box.
+
 ---
 
 ## Stack
