@@ -40,12 +40,13 @@ python devil.py
 ## The Scripts
 
 ### `gestures.py` — Gesture + Face Detection
-The core demo. Opens your webcam and reads your hand in real-time. It recognizes **pointing**, **rock** 🤘, **OK** 👌, and **call me** 🤙, and displays a labeled box next to your hand whenever a gesture is detected. At the same time, it draws a bounding box around your face. Two trackers running simultaneously, no lag.
+Gemini said
+A real-time webcam tool tracking faces and hand gestures. It identifies specific signs (pointing, OK, rock, call me) and overlays custom text labels.
 
 ---
 
 ### `devil.py` — Eye Snapper
-Flash a 🤘 rock sign and it **photographs your eye** — crops it from the live feed and stamps it back onto the screen, right where your eye is. Do it again and again and the eyes stack up. Flash **OK** 👌 to wipe them all. Your face is covered in a green dot constellation (478 face mesh landmarks) the whole time.
+A real-time webcam tool tracking face and hand landmarks. Using a "rock" gesture captures and overlays eye crops, while an "OK" gesture clears them.
 
 ---
 
@@ -70,8 +71,7 @@ Reflects and warps the webcam feed using facial landmark anchors. The effect dis
 ---
 
 ### `dithering_filter.py` — Dither Cam
-Applies a live dithering shader to your camera feed. Turns the video into a raw, pixelated, high-contrast render — like looking at yourself through a broken CRT.
-
+A desktop image dithering tool featuring Floyd-Steinberg, JJN, and Atkinson algorithms. It offers a dark GUI, live previews, and threshold control.
 ---
 
 ### `simple_monkey.py` — Starter Demo
