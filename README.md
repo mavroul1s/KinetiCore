@@ -46,7 +46,7 @@ A real-time webcam tool tracking faces and hand gestures. It identifies specific
 ---
 
 ### `devil.py` — Eye Snapper
-A real-time webcam tool tracking face and hand landmarks. Using a "rock" gesture captures and overlays eye crops, while an "OK" gesture clears them.
+Tracks face and hand landmarks. Using a "rock" gesture captures and overlays eye crops, while an "OK" gesture clears them.
 
 ---
 
